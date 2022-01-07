@@ -9,6 +9,7 @@ Regular-Font font-family: 'PT Sans Narrow', sans-serif;
 
 */
 
+
 :root {
   --primary-color: #357b70;
   --secondary-color: #e0b354;
@@ -208,7 +209,7 @@ button:hover, button:focus,
 
 .about-page__table {
   max-width: 800px;
-  max-height: auto;
+  height: auto;
   align-self: center;
 }
 
@@ -254,6 +255,7 @@ button:hover, button:focus,
 }
 
 .weird-writing {
+  color: var(--writing);
   background-color: #000000;
 }
 
@@ -320,7 +322,7 @@ button:hover, button:focus,
 
 @keyframes cloud-move{
   from{
-    transform: translate(0, 50px);
+    transform: translate(0px, 50px);
   }
   to{
     transform: translate(200px, 50px);

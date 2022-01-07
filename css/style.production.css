@@ -235,7 +235,7 @@ button:hover, button:focus,
 
 .about-page__table {
   max-width: 800px;
-  max-height: auto;
+  height: auto;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -289,6 +289,7 @@ button:hover, button:focus,
 }
 
 .weird-writing {
+  color: #ffffff;
   background-color: #000000;
 }
 
@@ -384,8 +385,8 @@ button:hover, button:focus,
 
 @-webkit-keyframes cloud-move{
   from{
-    -webkit-transform: translate(0, 50px);
-            transform: translate(0, 50px);
+    -webkit-transform: translate(0px, 50px);
+            transform: translate(0px, 50px);
   }
   to{
     -webkit-transform: translate(200px, 50px);
@@ -396,8 +397,8 @@ button:hover, button:focus,
 
 @keyframes cloud-move{
   from{
-    -webkit-transform: translate(0, 50px);
-            transform: translate(0, 50px);
+    -webkit-transform: translate(0px, 50px);
+            transform: translate(0px, 50px);
   }
   to{
     -webkit-transform: translate(200px, 50px);
