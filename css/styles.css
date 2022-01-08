@@ -14,62 +14,51 @@ Regular-Font font-family: 'PT Sans Narrow', sans-serif;
   --secondary-color: #e0b354;
   --dark-grey: #2b2b2b;
   --grid-bg-color: #f7f4e9;
-  --grid-color: #000000;
-  --grid-border:#1e463f;
-  --visited-link-color: #ff0000;
-  --writing: #ffffff;
+  --grid-color: #000;
+  --grid-border: #1e463f;
+  --visited-link-color: #f00;
+  --writing: #fff;
   --default-h-font: 'Amatic SC', cursive;
   --default-h-font-weight: 700;
   --sun-start: #edc655;
   --sun-mid: #fcffad;
-  --sun-end:#f76414;
-
+  --sun-end: #f76414;
 }
 
+* {
+  box-sizing: border-box;
+}
 
-*{box-sizing: border-box;}
-
-body{
+body {
   font-family: 'PT Sans Narrow', sans-serif;
   font-weight: 400;
   background-color: var(--primary-color);
-  color:var(--writing);
-}
-
-header, header a{
-
-
-}
-
-header {
-
-
+  color: var(--writing);
 }
 
 #page-header__logo {
   max-width: 150px;
   max-height: 150px;
   border-radius: 75%;
-  border-style:solid;
+  border-style: solid;
   border-color: var(--writing);
 }
 
-h1{
+h1 {
   font-size: 50px;
   font-weight: var(--default-h-font-weight);
   font-family: var(--default-h-font);
   text-decoration: underline;
 }
 
-h2{
+h2 {
   font-size: 40px;
   font-weight: var(--default-h-font-weight);
   font-family: var(--default-h-font);
   text-decoration: underline;
-
 }
 
-h3{
+h3 {
   font-size: 20px;
   font-weight: var(--default-h-font-weight);
   font-family: var(--default-h-font);
@@ -77,21 +66,18 @@ h3{
 
 a {
   color: var(--secondary-color);
-
 }
 
-
-
-a:visited{
+a:visited {
   color: var(--visited-link-color);
 }
 
-a:hover, a:focus{
-  text-decoration:none;
-
+a:hover,
+a:focus {
+  text-decoration: none;
 }
 
-a:active{
+a:active {
   color: var(--secondary-color);
 }
 
@@ -99,28 +85,27 @@ button,
 .button {
   border: none;
   display: inline-block;
-  font-family:inherit;
-  background-color:var(--visited-link-color);
+  font-family: inherit;
+  background-color: var(--visited-link-color);
   color: var(--writing);
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid rgba( 0,0,0,0.3);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   transition: 0.5s opacity;
   max-width: 200px;
   align-self: center;
 }
 
-button:hover, button:focus,
-.button:hover, .button:focus{
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
   cursor: pointer;
-
-  color: #000000;
-  background-color: #00ff00;
+  color: #000;
+  background-color: #0f0;
   opacity: 0.8;
 }
-
-
 
 .navigation-list {
   text-decoration: none;
@@ -137,18 +122,18 @@ button:hover, button:focus,
   margin-left: 15px;
 }
 
-.navigation-list a{
+.navigation-list a {
   text-decoration: none;
   list-style-type: none;
   color: var(--writing);
-  transition:0.3s color;
+  transition: 0.3s color;
 }
 
-
-.navigation-list a:hover, .navigation-list a:focus, .navigation-list a:active {
-    text-decoration: underline;
-    color: #edc655;
-
+.navigation-list a:hover,
+.navigation-list a:focus,
+.navigation-list a:active {
+  text-decoration: underline;
+  color: #edc655;
 }
 
 .profile {
@@ -156,25 +141,26 @@ button:hover, button:focus,
   margin: 0 auto;
 }
 
+
 .profile_portrait {
-  float:left;
+  float: left;
   width: 250px;
   height: 250px;
   margin-right: 40px;
   border-radius: 50%;
+  border-style: solid;
+  border-bottom-color: var(--writing);
 }
 
-
-
 .page-header {
-  display:flex;
+  display: flex;
   width: 100%;
   padding: 20px;
   font-family: 'Amatic SC', cursive;
   color: var(--writing);
   font-size: 28px;
   margin: auto;
-  border-width: 0px 0px 1px 0px;
+  border-width: 0 0 1px;
   border-style: solid;
   border-bottom-color: var(--writing);
 }
@@ -183,13 +169,14 @@ button:hover, button:focus,
   flex: 0 1 200px;
 }
 
-.page-header__item:last-child{
-  flex-grow:1;
-  text-align:right;
+.page-header__item:last-child {
+  flex-grow: 1;
+  text-align: right;
 }
+
 .page-footer {
-  clear:both;
-  display:flex;
+  clear: both;
+  display: flex;
   flex-direction: column;
   text-align: center;
 }
@@ -199,9 +186,9 @@ button:hover, button:focus,
 }
 
 #about-page {
-  display:flex;
-  flex-direction:column;
-  text-align:center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   margin: 0 auto;
   max-width: 800px;
 }
@@ -212,17 +199,16 @@ button:hover, button:focus,
   align-self: center;
 }
 
-.about-page__table td, th {
-  padding: 10px 10px;
+.about-page__table td,
+.about-page__table th {
+  padding: 10px;
 }
 
 .grid {
-  display:grid;
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
-
 }
-
 
 .grid__item {
   display: inline-block;
@@ -238,12 +224,10 @@ button:hover, button:focus,
     width: auto;
     min-height: auto;
     margin: 0;
-
     border-width: medium;
     border-color: var(--grid-border);
     border-style: solid;
   }
-
 
   .grid__item:last-child {
     grid-column-start: 3;
@@ -255,35 +239,33 @@ button:hover, button:focus,
 
 .weird-writing {
   color: var(--writing);
-  background-color: #000000;
+  background-color: #000;
 }
 
-
-@media all and (min-width: 500px) and (max-width: 750px){
-  .grid{
+@media all and (min-width: 500px) and (max-width: 750px) {
+  .grid {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media all and (max-width: 500px){
-  .grid{
+@media all and (max-width: 500px) {
+  .grid {
     grid-template-columns: 1fr;
   }
 }
 
-
-
-
-@media all and (min-width: 0px) and (max-width: 750px){
-  .grid{
+@media all and (min-width: 0) and (max-width: 750px) {
+  .grid {
     grid-gap: 10px;
   }
+
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
-  h1{
-    font-size: 22px
+
+  h1 {
+    font-size: 22px;
   }
 }
 
@@ -291,9 +273,11 @@ button:hover, button:focus,
   0% {
     fill: var(--sun-start);
   }
+
   50% {
     fill: var(--sun-mid);
   }
+
   100% {
     fill: var(--sund-end);
   }
@@ -304,30 +288,29 @@ button:hover, button:focus,
 }
 
 @keyframes cloud-move-reverse {
-  from{
+  from {
     transform: translate(446px, 48px);
   }
+
   to {
     transform: translate(100px, 48px);
   }
 }
 
-
-
 .cloud-back {
-  animation:34s cloud-move-reverse infinite alternate linear;
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
-
-@keyframes cloud-move{
-  from{
-    transform: translate(0px, 50px);
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
   }
-  to{
+
+  to {
     transform: translate(200px, 50px);
   }
 }
 
 .cloud-front {
-  animation:30s cloud-move infinite alternate linear;
+  animation: 30s cloud-move infinite alternate linear;
 }

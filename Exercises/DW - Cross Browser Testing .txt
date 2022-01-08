@@ -1,0 +1,5 @@
+Edge-No errors
+FIrefox - No errors
+Chrome - No errors
+Safari - Cross Browser Testing website showed circular shapes (Website Logo and Portrait) as oval. 
+Safari 2nd Try - Second run on legit Macbook showed no errors

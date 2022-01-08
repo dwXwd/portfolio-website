@@ -1,0 +1,3 @@
+W3C-validation
+linter-stylelint
+(tried to encorporate linter-tidy and linter-htmlhint but I'd need a more in depth explanation on how to).
