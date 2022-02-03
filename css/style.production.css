@@ -127,10 +127,6 @@ button:focus,
   color: #fff;
 }
 
-.navigation-list {
-  list-style-type: none;
-}
-
 .navigation-list li {
   display: inline-block;
   margin-left: 15px;
@@ -145,6 +141,8 @@ button:focus,
   transition: 0.3s color;
 }
 
+.navigation-list__item--active {
+  text-decoration: underline;
 .navigation-list a:hover,
 .navigation-list a:focus,
 .navigation-list a:active {
