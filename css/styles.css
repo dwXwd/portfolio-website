@@ -113,10 +113,6 @@ button:focus,
   color: var(--writing);
 }
 
-.navigation-list {
-  list-style-type: none;
-}
-
 .navigation-list li {
   display: inline-block;
   margin-left: 15px;
@@ -127,6 +123,11 @@ button:focus,
   list-style-type: none;
   color: var(--writing);
   transition: 0.3s color;
+}
+
+.navigation-list__item--active {
+  text-decoration: underline;
+  color: #edc655;
 }
 
 .navigation-list a:hover,
@@ -140,7 +141,6 @@ button:focus,
   max-width: 700px;
   margin: 0 auto;
 }
-
 
 .profile_portrait {
   float: left;
@@ -215,6 +215,10 @@ button:focus,
   width: 33%;
 }
 
+#work-section {
+  margin-left: 50px;
+}
+
 @supports (display:grid) {
   .grid__item {
     color: var(--grid-color);
@@ -279,7 +283,7 @@ button:focus,
   }
 
   100% {
-    fill: var(--sund-end);
+    fill: var(--sun-end);
   }
 }
 

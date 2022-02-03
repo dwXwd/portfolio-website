@@ -143,6 +143,9 @@ button:focus,
 
 .navigation-list__item--active {
   text-decoration: underline;
+  color: #edc655;
+}
+
 .navigation-list a:hover,
 .navigation-list a:focus,
 .navigation-list a:active {
@@ -154,7 +157,6 @@ button:focus,
   max-width: 700px;
   margin: 0 auto;
 }
-
 
 .profile_portrait {
   float: left;
@@ -249,6 +251,10 @@ button:focus,
   width: 33%;
 }
 
+#work-section {
+  margin-left: 50px;
+}
+
 @supports (display:grid) {
   .grid__item {
     color: #000;
@@ -319,7 +325,7 @@ button:focus,
   }
 
   100% {
-    fill: undefined;
+    fill: #f76414;
   }
 }
 
@@ -333,7 +339,7 @@ button:focus,
   }
 
   100% {
-    fill: undefined;
+    fill: #f76414;
   }
 }
 
