@@ -148,17 +148,17 @@ button:focus,
 
 .profile_portrait {
   float: left;
-  width: 350px;
+  width: 250px;
   height: 250px;
   margin-right: 40px;
   border-radius: 50%;
   border-style: solid;
-  border-bottom-color: var(--writing);
+  border-bottom-color: black;
 }
 
 .demo-picture {
   float: left;
-  width: ;
+  width: 250px;
   height: 250px;
   margin-right: 40px;
   border-style: solid;
