@@ -137,8 +137,8 @@ button:focus,
   color: #edc655;
 }
 
-.portfolio{
-  margin-left: 40px;
+#portfolio{
+  margin-left: 50px;
 }
 
 .profile {
@@ -153,16 +153,16 @@ button:focus,
   margin-right: 40px;
   border-radius: 50%;
   border-style: solid;
-  border-bottom-color: black;
+  border-bottom-color: var(--writing);
 }
 
-.demo-picture {
+.demo_picture {
   float: left;
   width: 250px;
   height: 250px;
   margin-right: 40px;
   border-style: solid;
-  border-bottom-color: var(--writing);
+  border-bottom-color: black;
 }
 
 .page-header {
