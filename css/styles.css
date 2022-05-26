@@ -137,6 +137,10 @@ button:focus,
   color: #edc655;
 }
 
+.portfolio{
+  margin-left: 40px;
+}
+
 .profile {
   max-width: 700px;
   margin: 0 auto;
