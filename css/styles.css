@@ -153,16 +153,15 @@ button:focus,
   margin-right: 40px;
   border-radius: 50%;
   border-style: solid;
-  border-bottom-color: var(--writing);
+  border-color: (var(--writing) var(--writing) var(--writing) var(--writing));
 }
 
 .demo_picture {
   float: left;
-  width: 250px;
+  width: 400px;
   height: 250px;
   margin-right: 40px;
   border-style: solid;
-  border-bottom-color: black;
 }
 
 .page-header {
